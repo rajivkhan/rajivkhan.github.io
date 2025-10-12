@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Abr Rajib</title>
+    <link rel="icon" type="image/x-icon" href="data:,">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Montserrat:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm" id="mainNavbar">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <span class="gradient-text">Abr Rajib</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="projects.html">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="skills.html">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item ms-3">
+                        <button class="btn btn-outline-primary btn-sm rounded-pill px-3" id="darkModeToggle">
+                            <i class="fas fa-moon"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center" data-aos="fade-down">
+                    <h1 class="display-3 fw-bold mb-3">My Projects</h1>
+                    <p class="lead text-muted">A showcase of my recent work and achievements</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filter Buttons -->
+    <section class="filter-section py-4">
+        <div class="container">
+            <div class="text-center" data-aos="fade-up">
+                <button class="btn btn-filter active" data-filter="all">All Projects</button>
+                <button class="btn btn-filter" data-filter="web">Web Development</button>
+                <button class="btn btn-filter" data-filter="mobile">Mobile Apps</button>
+                <button class="btn btn-filter" data-filter="design">UI/UX Design</button>
+                <button class="btn btn-filter" data-filter="fullstack">Full Stack</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Grid -->
+    <section class="projects-section py-5">
+        <div class="container">
+            <div class="row g-4" id="projectsGrid">
+                <!-- Project 1 -->
+                <div class="col-lg-4 col-md-6 project-item" data-category="fullstack web" data-aos="fade-up">
+                    <div class="project-card h-100">
+                        <div class="project-image">
+                            <img src="https://via.placeholder.com/400x300/667eea/ffffff?text=E-Commerce+Platform"
+                                alt="E-Commerce Platform" class="img-fluid">
+                            <div class="project-overlay">
+                                <a href="#" class="btn btn-light btn-sm me-2" data-bs-toggle="modal"
+                                    data-bs-target="#project1Modal">
+                                    <i class="fas fa-eye"></i> View Details
+                                </a>
+                                <a href="https://github.com/rajivkhan/ecommerce" target="_blank"
+                                    class="btn btn-light btn-sm">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h4>E-Commerce Platform</h4>
+                            <p class="text-muted">Full-featured online shopping platform with payment integration, admin
+                                dashboard, and real-time inventory management.</p>
+                            <div class="project-tags mb-3">
+                                <span class="badge bg-primary">React</span>
+                                <span class="badge bg-success">Node.js</span>
+                                <span class="badge bg-info">MongoDB</span>
+                                <span class="badge bg-warning">Stripe</span>
+                            </div>
+                            <div class="project-stats">
+                                <span><i class="fas fa-star text-warning"></i> 4.8</span>
+                                <span><i class="fas fa-code-branch"></i> 45</span>
+                                <span><i class="fas fa-eye"></i> 1.2K</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="col-lg-4 col-md-6 project-item" data-category="web design" data-aos="fade-up"
+                    data-aos-delay="100">
+                    <div class="project-card h-100">
+                        <div class="project-image">
+                            <img src="https://via.placeholder.com/400x300/764ba2/ffffff?text=Social+Dashboard"
+                                alt="Social Media Dashboard" class="img-fluid">
+                            <div class="project-overlay">
+                                <a href="#" class="btn btn-light btn-sm me-2" data-bs-toggle="modal"
+                                    data-bs-target="#project2Modal">
+                                    <i class="fas fa-eye"></i> View Details
+                                </a>
+                                <a href="https://github.com/rajivkhan/social-dashboard" target="_blank"
+                                    class="btn btn-light btn-sm">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h4>Social Media Analytics Dashboard</h4>
+                            <p class="text-muted">Real-time analytics platform for social media management with
+                                beautiful data visualizations and insights.</p>
+                            <div class="project-tags mb-3">
+                                <span class="badge bg-primary">Vue.js</span>
+                                <span class="badge bg-warning">Python</span>
+                                <span class="badge bg-danger">Redis</span>
+                                <span class="badge bg-info">Chart.js</span>
+                            </div>
+                            <div class="project-stats">
+                                <span><i class="fas fa-star text-warning"></i> 4.9</span>
+                                <span><i class="fas fa-code-branch"></i> 32</span>
+                                <span><i class="fas fa-eye"></i> 890</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="col-lg-4 col-md-6 project-item" data-category="fullstack web" data-aos="fade-up"
+                    data-aos-delay="200">
+                    <div class="project-card h-100">
+                        <div class="project-image">
+                            <img src="https://via.placeholder.com/400x300/f093fb/ffffff?text=Task+Manager"
+                                alt="Task Management" class="img-fluid">
+                            <div class="project-overlay">
+                                <a href="#" class="btn btn-light btn-sm me-2" data-bs-toggle="modal"
+                                    data-bs-target="#project3Modal">
+                                    <i class="fas fa-eye"></i> View Details
+                                </a>
+                                <a href="https://github.com/rajivkhan/task-manager" target="_blank"
+                                    class="btn btn-light btn-sm">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h4>Collaborative Task Manager</h4>
+                            <p class="text-muted">Team collaboration tool with real-time updates, kanban boards, and
+                                advanced project management features.</p>
+                            <div class="project-tags mb-3">
+                                <span class="badge bg-primary">Angular</span>
+                                <span class="badge bg-success">Express</span>
+                                <span class="badge bg-secondary">PostgreSQL</span>
+                                <span class="badge bg-info">Socket.io</span>
+                            </div>
+                            <div class="project-stats">
+                                <span><i class="fas fa-star text-warning"></i> 4.7</span>
+                                <span><i class="fas fa-code-branch"></i> 28</span>
+                                <span><i class="fas fa-eye"></i> 670</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="col-lg-4 col-md-6 project-item" data-category="mobile" data-aos="fade-up"
+                    data-aos-delay="300">
+                    <div class="project-card h-100">
+                        <div class="project-image">
+                            <img src="https://via.placeholder.com/400x300/4facfe/ffffff?text=Fitness+Tracker"
+                                alt="Fitness App" class="img-fluid">
+                            <div class="project-overlay">
+                                <a href="#" class="btn btn-light btn-sm me-2">
+                                    <i class="fas fa-eye"></i> View Details
+                                </a>
+                                <a href="https://github.com/rajivkhan/fitness-tracker" target="_blank"
+                                    class="btn btn-light btn-sm">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h4>Fitness Tracker App</h4>
+                            <p class="text-muted">Mobile application for tracking workouts, nutrition, and health
+                                metrics with AI-powered recommendations.</p>
+                            <div class="project-tags mb-3">
+                                <span class="badge bg-primary">React Native</span>
+                                <span class="badge bg-success">Firebase</span>
+                                <span class="badge bg-warning">TensorFlow</span>
+                            </div>
+                            <div class="project-stats">
+                                <span><i class="fas fa-star text-warning"></i> 4.6</span>
+                                <span><i class="fas fa-code-branch"></i> 22</span>
+                                <span><i class="fas fa-eye"></i> 550</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="col-lg-4 col-md-6 project-item" data-category="web design" data-aos="fade-up"
+                    data-aos-delay="400">
+                    <div class="project-card h-100">
+                        <div class="project-image">
+                            <img src="https://via.placeholder.com/400x300/00f2fe/ffffff?text=Portfolio+CMS"
+                                alt="Portfolio CMS" class="img-fluid">
+                            <div class="project-overlay">
+                                <a href="#" class="btn btn-light btn-sm me-2">
+                                    <i class="fas fa-eye"></i> View Details
+                                </a>
+                                <a href="https://github.com/rajivkhan/portfolio-cms" target="_blank"
+                                    class="btn btn-light btn-sm">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h4>Portfolio CMS</h4>
+                            <p class="text-muted">Content management system for portfolio websites with drag-and-drop
+                                builder and customizable themes.</p>
+                            <div class="project-tags mb-3">
+                                <span class="badge bg-primary">Next.js</span>
+                                <span class="badge bg-secondary">GraphQL</span>
+                                <span class="badge bg-info">Prisma</span>
+                            </div>
+                            <div class="project-stats">
+                                <span><i class="fas fa-star text-warning"></i> 4.8</span>
+                                <span><i class="fas fa-code-branch"></i> 38</span>
+                                <span><i class="fas fa-eye"></i> 920</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="col-lg-4 col-md-6 project-item" data-category="fullstack web" data-aos="fade-up"
+                    data-aos-delay="500">
+                    <div class="project-card h-100">
+                        <div class="project-image">
+                            <img src="https://via.placeholder.com/400x300/43e97b/ffffff?text=Chat+Application"
+                                alt="Chat App" class="img-fluid">
+                            <div class="project-overlay">
+                                <a href="#" class="btn btn-light btn-sm me-2">
+                                    <i class="fas fa-eye"></i> View Details
+                                </a>
+                                <a href="https://github.com/rajivkhan/realtime-chat" target="_blank"
+                                    class="btn btn-light btn-sm">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h4>Real-Time Chat Application</h4>
+                            <p class="text-muted">Instant messaging platform with video calls, file sharing, and
+                                end-to-end encryption.</p>
+                            <div class="project-tags mb-3">
+                                <span class="badge bg-primary">React</span>
+                                <span class="badge bg-success">Node.js</span>
+                                <span class="badge bg-danger">WebRTC</span>
+                                <span class="badge bg-info">Socket.io</span>
+                            </div>
+                            <div class="project-stats">
+                                <span><i class="fas fa-star text-warning"></i> 4.9</span>
+                                <span><i class="fas fa-code-branch"></i> 52</span>
+                                <span><i class="fas fa-eye"></i> 1.5K</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 7 -->
+                <div class="col-lg-4 col-md-6 project-item" data-category="mobile" data-aos="fade-up"
+                    data-aos-delay="600">
+                    <div class="project-card h-100">
+                        <div class="project-image">
+                            <img src="https://via.placeholder.com/400x300/fa709a/ffffff?text=Food+Delivery"
+                                alt="Food Delivery" class="img-fluid">
+                            <div class="project-overlay">
+                                <a href="#" class="btn btn-light btn-sm me-2">
+                                    <i class="fas fa-eye"></i> View Details
+                                </a>
+                                <a href="https://github.com/rajivkhan/food-delivery" target="_blank"
+                                    class="btn btn-light btn-sm">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h4>Food Delivery App</h4>
+                            <p class="text-muted">On-demand food delivery service with real-time tracking, multiple
+                                payment options, and restaurant management.</p>
+                            <div class="project-tags mb-3">
+                                <span class="badge bg-primary">Flutter</span>
+                                <span class="badge bg-success">Django</span>
+                                <span class="badge bg-info">Google Maps</span>
+                            </div>
+                            <div class="project-stats">
+                                <span><i class="fas fa-star text-warning"></i> 4.7</span>
+                                <span><i class="fas fa-code-branch"></i> 34</span>
+                                <span><i class="fas fa-eye"></i> 780</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 8 -->
+                <div class="col-lg-4 col-md-6 project-item" data-category="web fullstack" data-aos="fade-up"
+                    data-aos-delay="700">
+                    <div class="project-card h-100">
+                        <div class="project-image">
+                            <img src="https://via.placeholder.com/400x300/fee140/ffffff?text=Learning+Platform"
+                                alt="Learning Platform" class="img-fluid">
+                            <div class="project-overlay">
+                                <a href="#" class="btn btn-light btn-sm me-2">
+                                    <i class="fas fa-eye"></i> View Details
+                                </a>
+                                <a href="https://github.com/rajivkhan/learning-platform" target="_blank"
+                                    class="btn btn-light btn-sm">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h4>Online Learning Platform</h4>
+                            <p class="text-muted">E-learning platform with video courses, quizzes, certificates, and
+                                interactive coding challenges.</p>
+                            <div class="project-tags mb-3">
+                                <span class="badge bg-primary">React</span>
+                                <span class="badge bg-success">Node.js</span>
+                                <span class="badge bg-info">AWS</span>
+                                <span class="badge bg-warning">Stripe</span>
+                            </div>
+                            <div class="project-stats">
+                                <span><i class="fas fa-star text-warning"></i> 4.9</span>
+                                <span><i class="fas fa-code-branch"></i> 48</span>
+                                <span><i class="fas fa-eye"></i> 1.1K</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 9 -->
+                <div class="col-lg-4 col-md-6 project-item" data-category="design web" data-aos="fade-up"
+                    data-aos-delay="800">
+                    <div class="project-card h-100">
+                        <div class="project-image">
+                            <img src="https://via.placeholder.com/400x300/30cfd0/ffffff?text=Weather+Dashboard"
+                                alt="Weather Dashboard" class="img-fluid">
+                            <div class="project-overlay">
+                                <a href="#" class="btn btn-light btn-sm me-2">
+                                    <i class="fas fa-eye"></i> View Details
+                                </a>
+                                <a href="https://github.com/rajivkhan/weather-dashboard" target="_blank"
+                                    class="btn btn-light btn-sm">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h4>Weather Dashboard</h4>
+                            <p class="text-muted">Beautiful weather application with forecasts, interactive maps, and
+                                weather alerts for multiple locations.</p>
+                            <div class="project-tags mb-3">
+                                <span class="badge bg-primary">React</span>
+                                <span class="badge bg-info">OpenWeather API</span>
+                                <span class="badge bg-success">Leaflet</span>
+                            </div>
+                            <div class="project-stats">
+                                <span><i class="fas fa-star text-warning"></i> 4.5</span>
+                                <span><i class="fas fa-code-branch"></i> 19</span>
+                                <span><i class="fas fa-eye"></i> 420</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GitHub Stats -->
+    <section class="github-stats py-5 bg-light">
+        <div class="container">
+            <div class="section-header text-center mb-5" data-aos="fade-up">
+                <h2 class="display-5 fw-bold mb-3">GitHub Activity</h2>
+                <p class="lead text-muted">My coding journey on GitHub</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-8" data-aos="fade-right">
+                    <div class="github-card">
+                        <h4 class="mb-4"><i class="fab fa-github me-2"></i> Contribution Graph</h4>
+                        <div class="contribution-graph">
+                            <img src="https://ghchart.rshah.org/667eea/rajivkhan" alt="GitHub Contributions"
+                                class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4" data-aos="fade-left">
+                    <div class="github-card mb-4">
+                        <h5 class="mb-3">Profile Stats</h5>
+                        <div class="stat-item mb-3">
+                            <i class="fas fa-code-branch text-primary me-2"></i>
+                            <span class="fw-bold">156</span> Public Repositories
+                        </div>
+                        <div class="stat-item mb-3">
+                            <i class="fas fa-star text-warning me-2"></i>
+                            <span class="fw-bold">2.4K</span> Total Stars
+                        </div>
+                        <div class="stat-item mb-3">
+                            <i class="fas fa-users text-success me-2"></i>
+                            <span class="fw-bold">480</span> Followers
+                        </div>
+                        <div class="stat-item">
+                            <i class="fas fa-code text-info me-2"></i>
+                            <span class="fw-bold">3.2K</span> Contributions
+                        </div>
+                    </div>
+                    <a href="https://github.com/rajivkhan" target="_blank" class="btn btn-primary w-100">
+                        <i class="fab fa-github me-2"></i> Visit GitHub Profile
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal for Project 1 -->
+    <div class="modal fade" id="project1Modal" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title fw-bold">E-Commerce Platform</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="https://via.placeholder.com/800x500/667eea/ffffff?text=E-Commerce+Platform+Screenshot"
+                        alt="Project" class="img-fluid rounded mb-4">
+                    <h6 class="fw-bold mb-3">Project Overview</h6>
+                    <p>A comprehensive e-commerce solution built with modern technologies. Features include user
+                        authentication, product catalog, shopping cart, secure payment processing with Stripe, order
+                        management, and an admin dashboard for inventory and order management.</p>
+
+                    <h6 class="fw-bold mb-3 mt-4">Key Features</h6>
+                    <ul>
+                        <li>User authentication and authorization</li>
+                        <li>Product search and filtering</li>
+                        <li>Shopping cart with real-time updates</li>
+                        <li>Secure payment integration with Stripe</li>
+                        <li>Order tracking and history</li>
+                        <li>Admin dashboard for management</li>
+                        <li>Responsive design for all devices</li>
+                    </ul>
+
+                    <h6 class="fw-bold mb-3 mt-4">Technologies Used</h6>
+                    <div class="mb-3">
+                        <span class="badge bg-primary me-2">React</span>
+                        <span class="badge bg-success me-2">Node.js</span>
+                        <span class="badge bg-info me-2">MongoDB</span>
+                        <span class="badge bg-warning me-2">Stripe</span>
+                        <span class="badge bg-secondary me-2">Redux</span>
+                        <span class="badge bg-danger">Express</span>
+                    </div>
+
+                    <div class="d-flex gap-2 mt-4">
+                        <a href="https://demo.example.com" target="_blank" class="btn btn-primary">
+                            <i class="fas fa-external-link-alt me-2"></i>Live Demo
+                        </a>
+                        <a href="https://github.com/rajivkhan/ecommerce" target="_blank"
+                            class="btn btn-outline-primary">
+                            <i class="fab fa-github me-2"></i>View Code
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <h4 class="gradient-text mb-3">Abr Rajib</h4>
+                    <p class="text-muted">Full Stack Developer passionate about creating amazing web experiences. Let's
+                        build something great together!</p>
+                    <div class="social-links mt-4">
+                        <a href="https://github.com/rajivkhan" target="_blank" class="social-icon">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/abrrajib" target="_blank" class="social-icon">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://twitter.com/abrrajib" target="_blank" class="social-icon">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://instagram.com/abrrajib" target="_blank" class="social-icon">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="mb-3">Quick Links</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="mb-3">Services</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="skills.html">Web Development</a></li>
+                        <li><a href="skills.html">Mobile Apps</a></li>
+                        <li><a href="skills.html">UI/UX Design</a></li>
+                        <li><a href="skills.html">Consulting</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h5 class="mb-3">Get In Touch</h5>
+                    <ul class="list-unstyled footer-contact">
+                        <li>
+                            <i class="fas fa-envelope me-2"></i>
+                            <a href="mailto:contact@abrrajib.me">contact@abrrajib.me</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone me-2"></i>
+                            <a href="tel:+1234567890">+1 (234) 567-890</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-map-marker-alt me-2"></i>
+                            <span>San Francisco, CA</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0 text-muted">&copy; 2025 Abr Rajib. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <a href="#" class="text-muted me-3">Privacy Policy</a>
+                    <a href="#" class="text-muted">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- AOS Animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+
+</html>
